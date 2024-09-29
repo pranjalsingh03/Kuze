@@ -37,7 +37,7 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true 
     });
 
 app.use(cors({
-    origin: 'https://kuzeleather.vercel.app',
+    origin: true,
     // origin: 'http://localhost:3002',
     methods: ['GET', 'POST', 'DELETE'],
     credentials: true
